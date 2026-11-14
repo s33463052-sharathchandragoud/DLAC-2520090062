@@ -1,0 +1,18 @@
+﻿# Runtime-generated output images in tasks/
+tasks/*_output.jpg
+tasks/captured_traffic_signal.jpg
+tasks/task1_opencv_test.jpg
+tasks/task3_displayed_traffic_image.jpg
+tasks/traffic_waiting_time_report.txt
+
+# Extracted video frames (Task 5 runtime output)
+extracted_frames/*.jpg
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# OS artifacts
+.DS_Store
+Thumbs.db
