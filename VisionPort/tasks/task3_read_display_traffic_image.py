@@ -8,6 +8,8 @@ import cv2
 import os
 
 TASK_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_DIR = os.path.join(TASK_DIR, "outputs")
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 PROJECT_ROOT = os.path.dirname(TASK_DIR)
 SAMPLES_DIR = os.path.join(PROJECT_ROOT, "samples")
 
@@ -42,7 +44,7 @@ cv2.putText(
     2
 )
 
-output_path = os.path.join(TASK_DIR, "task3_displayed_traffic_image.jpg")
+output_path = os.path.join(OUTPUT_DIR, "task3_displayed_traffic_image.jpg")
 cv2.imwrite(output_path, display_img)
 print(f"[OUTPUT] Verification image saved to: {output_path}")
 

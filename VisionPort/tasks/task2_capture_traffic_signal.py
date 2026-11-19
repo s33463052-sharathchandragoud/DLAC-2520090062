@@ -8,6 +8,8 @@ import cv2
 import os
 
 TASK_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_DIR = os.path.join(TASK_DIR, "outputs")
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 PROJECT_ROOT = os.path.dirname(TASK_DIR)
 SAMPLES_DIR = os.path.join(PROJECT_ROOT, "samples")
 
@@ -15,7 +17,7 @@ print("=" * 60)
 print("VisionPort Task 2: Capture Traffic Signal Image")
 print("=" * 60)
 
-output_path = os.path.join(TASK_DIR, "captured_traffic_signal.jpg")
+output_path = os.path.join(OUTPUT_DIR, "captured_traffic_signal.jpg")
 
 cap = cv2.VideoCapture(0)
 frame = None

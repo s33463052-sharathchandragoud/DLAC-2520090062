@@ -1,18 +1,32 @@
-﻿# Runtime-generated output images in tasks/
-tasks/*_output.jpg
-tasks/captured_traffic_signal.jpg
-tasks/task1_opencv_test.jpg
-tasks/task3_displayed_traffic_image.jpg
-tasks/traffic_waiting_time_report.txt
+﻿# ── Runtime-generated outputs ───────────────────────────────────────────────
+# Task scripts write all output images and reports here — never commit these
+tasks/outputs/*.jpg
+tasks/outputs/*.png
+tasks/outputs/*.txt
+
+# Legacy: in case any stray images end up at the tasks/ root
+tasks/*.jpg
+tasks/*.png
+tasks/*.txt
 
 # Extracted video frames (Task 5 runtime output)
 extracted_frames/*.jpg
+extracted_frames/*.png
 
-# Python bytecode
+# ── Python artifacts ─────────────────────────────────────────────────────────
 __pycache__/
 *.pyc
 *.pyo
+*.pyd
+.Python
 
-# OS artifacts
+# ── Virtual environments ──────────────────────────────────────────────────────
+venv/
+.venv/
+env/
+
+# ── OS / editor artifacts ─────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
+.vscode/
+*.log

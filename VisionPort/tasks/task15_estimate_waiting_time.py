@@ -9,6 +9,8 @@ import os
 import sys
 
 TASK_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_DIR = os.path.join(TASK_DIR, "outputs")
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 PROJECT_ROOT = os.path.dirname(TASK_DIR)
 SAMPLES_DIR = os.path.join(PROJECT_ROOT, "samples")
 WEIGHTS_PATH = os.path.join(PROJECT_ROOT, "yolov8n.pt")
@@ -25,8 +27,8 @@ image_source = os.path.join(SAMPLES_DIR, "intersection.jpg")
 if not os.path.exists(image_source):
     image_source = os.path.join(SAMPLES_DIR, "sample_traffic.jpg")
 
-output_image = os.path.join(TASK_DIR, "task15_waiting_time_output.jpg")
-report_file = os.path.join(TASK_DIR, "traffic_waiting_time_report.txt")
+output_image = os.path.join(OUTPUT_DIR, "task15_waiting_time_output.jpg")
+report_file = os.path.join(OUTPUT_DIR, "traffic_waiting_time_report.txt")
 
 BASE_RED_DURATION_SEC = 25.0
 DISPERSION_PER_VEHICLE_SEC = 2.4

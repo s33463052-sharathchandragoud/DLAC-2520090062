@@ -9,6 +9,8 @@ import os
 import sys
 
 TASK_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_DIR = os.path.join(TASK_DIR, "outputs")
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 PROJECT_ROOT = os.path.dirname(TASK_DIR)
 SAMPLES_DIR = os.path.join(PROJECT_ROOT, "samples")
 WEIGHTS_PATH = os.path.join(PROJECT_ROOT, "yolov8n.pt")
@@ -22,7 +24,7 @@ print("=" * 60)
 
 detector = VisionPortDetector(WEIGHTS_PATH)
 video_source = os.path.join(SAMPLES_DIR, "video.mp4")
-output_image = os.path.join(TASK_DIR, "task12_tracking_output.jpg")
+output_image = os.path.join(OUTPUT_DIR, "task12_tracking_output.jpg")
 
 cap = cv2.VideoCapture(video_source)
 saved_snapshot = False
