@@ -24,7 +24,7 @@ image_path = os.path.join(SAMPLES_DIR, "intersection.jpg")
 if not os.path.exists(image_path):
     image_path = os.path.join(SAMPLES_DIR, "sample_traffic.jpg")
 
-output_image_path = os.path.join(OUTPUT_DIR, "task7_multiple_vehicles_output.jpg")
+output_image_path = os.path.join(OUTPUT_DIR, "task07_multiple_vehicles_output.jpg")
 
 VEHICLE_CLASSES = {
     1: ("Bicycle", (255, 100, 0)),

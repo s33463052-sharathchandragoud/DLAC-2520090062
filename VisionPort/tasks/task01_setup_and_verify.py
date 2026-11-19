@@ -55,7 +55,7 @@ if all_passed:
     cv2.putText(test_img, "OpenCV & Python Environment Verified!", (30, 160), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 1)
     cv2.circle(test_img, (250, 230), 30, (0, 200, 0), -1)
     cv2.putText(test_img, "OK", (238, 238), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (255, 255, 255), 2)
-    output_filename = os.path.join(OUTPUT_DIR, "task1_opencv_test.jpg")
+    output_filename = os.path.join(OUTPUT_DIR, "task01_opencv_test.jpg")
     cv2.imwrite(output_filename, test_img)
     print(f"[SAVED] Generated verification image: {output_filename}")
 else:

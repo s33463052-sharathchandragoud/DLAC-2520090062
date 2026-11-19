@@ -13,21 +13,21 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 TASKS_DIR = os.path.join(BASE_DIR, "tasks")
 
 TASK_SCRIPTS = [
-    ("Task 1", "Environment Verification", "task1_setup_and_verify.py"),
-    ("Task 2", "Capture Traffic Signal", "task2_capture_traffic_signal.py"),
-    ("Task 3", "Display Traffic Image", "task3_read_display_traffic_image.py"),
-    ("Task 4", "Play Traffic Video", "task4_load_play_traffic_video.py"),
-    ("Task 5", "Extract Video Frames", "task5_extract_video_frames.py"),
-    ("Task 6", "Detect Cars (YOLO)", "task6_detect_cars.py"),
-    ("Task 7", "Detect Multiple Vehicles", "task7_detect_multiple_vehicles.py"),
-    ("Task 8", "Labels & Confidence Scores", "task8_display_labels_confidence.py"),
-    ("Task 9", "Count Vehicles in Frame", "task9_count_vehicles.py"),
-    ("Task 10", "Traffic Density Metric", "task10_traffic_density.py"),
-    ("Task 11", "Congestion Alerts", "task11_detect_congestion.py"),
-    ("Task 12", "Vehicle Tracking IDs", "task12_track_vehicles.py"),
-    ("Task 13", "Speed Estimation", "task13_calculate_vehicle_speed.py"),
-    ("Task 14", "Signal State Detection", "task14_identify_traffic_signal.py"),
-    ("Task 15", "Waiting Time Report", "task15_estimate_waiting_time.py")
+    ("Task 01", "Environment Verification",   "task01_setup_and_verify.py"),
+    ("Task 02", "Capture Traffic Signal",     "task02_capture_traffic_signal.py"),
+    ("Task 03", "Display Traffic Image",      "task03_read_display_traffic_image.py"),
+    ("Task 04", "Play Traffic Video",         "task04_load_play_traffic_video.py"),
+    ("Task 05", "Extract Video Frames",       "task05_extract_video_frames.py"),
+    ("Task 06", "Detect Cars (YOLO)",         "task06_detect_cars.py"),
+    ("Task 07", "Detect Multiple Vehicles",   "task07_detect_multiple_vehicles.py"),
+    ("Task 08", "Labels & Confidence Scores", "task08_display_labels_confidence.py"),
+    ("Task 09", "Count Vehicles in Frame",    "task09_count_vehicles.py"),
+    ("Task 10", "Traffic Density Metric",     "task10_traffic_density.py"),
+    ("Task 11", "Congestion Alerts",          "task11_detect_congestion.py"),
+    ("Task 12", "Vehicle Tracking IDs",       "task12_track_vehicles.py"),
+    ("Task 13", "Speed Estimation",           "task13_calculate_vehicle_speed.py"),
+    ("Task 14", "Signal State Detection",     "task14_identify_traffic_signal.py"),
+    ("Task 15", "Waiting Time Report",        "task15_estimate_waiting_time.py")
 ]
 
 def main():

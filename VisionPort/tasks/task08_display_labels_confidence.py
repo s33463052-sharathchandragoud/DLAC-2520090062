@@ -24,7 +24,7 @@ image_path = os.path.join(SAMPLES_DIR, "intersection.jpg")
 if not os.path.exists(image_path):
     image_path = os.path.join(SAMPLES_DIR, "sample_traffic.jpg")
 
-output_path = os.path.join(OUTPUT_DIR, "task8_labelled_confidence_output.jpg")
+output_path = os.path.join(OUTPUT_DIR, "task08_labelled_confidence_output.jpg")
 
 img = cv2.imread(image_path)
 results = model(img, verbose=False)

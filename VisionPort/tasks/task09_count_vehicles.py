@@ -24,7 +24,7 @@ source_image = os.path.join(SAMPLES_DIR, "intersection.jpg")
 if not os.path.exists(source_image):
     source_image = os.path.join(SAMPLES_DIR, "sample_traffic.jpg")
 
-output_image = os.path.join(OUTPUT_DIR, "task9_vehicle_count_output.jpg")
+output_image = os.path.join(OUTPUT_DIR, "task09_vehicle_count_output.jpg")
 VEHICLE_CLASS_IDS = [1, 2, 3, 5, 7]
 
 frame = cv2.imread(source_image)
